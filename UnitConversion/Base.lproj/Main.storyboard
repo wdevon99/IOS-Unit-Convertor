@@ -48,18 +48,36 @@
         <!--Speed-->
         <scene sceneID="btU-8n-UBU">
             <objects>
-                <viewController id="bn6-dH-HHr" sceneMemberID="viewController">
+                <viewController id="bn6-dH-HHr" customClass="SpeedViewController" customModule="UnitConversion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t2W-Ss-mHU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQO-5r-DgT" customClass="CustomKeyboard" customModule="UnitConversion" customModuleProvider="target">
+                                <rect key="frame" x="4" y="149" width="366" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9pV-Cz-2RK">
+                                <rect key="frame" x="52" y="75" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.94989388450000001" green="0.16712959769999999" blue="0.19381414299999999" alpha="0.94656999139999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RYV-Ef-JIa"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="speed" id="GvM-dZ-Xlz"/>
+                    <connections>
+                        <outlet property="customKeyboard" destination="oQO-5r-DgT" id="b8f-uo-GP0"/>
+                        <outlet property="tf1" destination="9pV-Cz-2RK" id="0wQ-A4-5np"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHM-9C-muh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1359" y="707"/>
+            <point key="canvasLocation" x="1357.5999999999999" y="706.59670164917543"/>
         </scene>
         <!--Length-->
         <scene sceneID="ifY-Ce-a9t">

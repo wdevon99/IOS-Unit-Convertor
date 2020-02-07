@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0088B09123ED56B40088383A /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088B09023ED56B40088383A /* CustomKeyboard.swift */; };
+		0088B09323ED57020088383A /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0088B09223ED57020088383A /* CustomKeyboard.xib */; };
 		00A6698E23EC0AB8003D2459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6698D23EC0AB8003D2459 /* AppDelegate.swift */; };
 		00A6699023EC0AB8003D2459 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6698F23EC0AB8003D2459 /* WelcomeViewController.swift */; };
 		00A6699323EC0AB8003D2459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6699123EC0AB8003D2459 /* Main.storyboard */; };
 		00A6699523EC0AB8003D2459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A6699423EC0AB8003D2459 /* Assets.xcassets */; };
 		00A6699823EC0AB8003D2459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6699623EC0AB8003D2459 /* LaunchScreen.storyboard */; };
 		00A669A023EC108E003D2459 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6699F23EC108E003D2459 /* MainTabController.swift */; };
+		00B9141123EDC3DC00503997 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9141023EDC3DC00503997 /* SpeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0088B09023ED56B40088383A /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		0088B09223ED57020088383A /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 		00A6698A23EC0AB8003D2459 /* UnitConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A6698D23EC0AB8003D2459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00A6698F23EC0AB8003D2459 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		00A6699723EC0AB8003D2459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A6699923EC0AB8003D2459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A6699F23EC108E003D2459 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		00B9141023EDC3DC00503997 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0088B08F23ED56840088383A /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0088B09023ED56B40088383A /* CustomKeyboard.swift */,
+				0088B09223ED57020088383A /* CustomKeyboard.xib */,
+			);
+			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
 		00A6698123EC0AB8003D2459 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +71,7 @@
 		00A6698C23EC0AB8003D2459 /* UnitConversion */ = {
 			isa = PBXGroup;
 			children = (
+				0088B08F23ED56840088383A /* ReusableComponents */,
 				00A6698D23EC0AB8003D2459 /* AppDelegate.swift */,
 				00A6698F23EC0AB8003D2459 /* WelcomeViewController.swift */,
 				00A6699123EC0AB8003D2459 /* Main.storyboard */,
@@ -63,6 +79,7 @@
 				00A6699423EC0AB8003D2459 /* Assets.xcassets */,
 				00A6699623EC0AB8003D2459 /* LaunchScreen.storyboard */,
 				00A6699923EC0AB8003D2459 /* Info.plist */,
+				00B9141023EDC3DC00503997 /* SpeedViewController.swift */,
 			);
 			path = UnitConversion;
 			sourceTree = "<group>";
@@ -128,6 +145,7 @@
 				00A6699823EC0AB8003D2459 /* LaunchScreen.storyboard in Resources */,
 				00A6699523EC0AB8003D2459 /* Assets.xcassets in Resources */,
 				00A6699323EC0AB8003D2459 /* Main.storyboard in Resources */,
+				0088B09323ED57020088383A /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A6699023EC0AB8003D2459 /* WelcomeViewController.swift in Sources */,
+				00B9141123EDC3DC00503997 /* SpeedViewController.swift in Sources */,
 				00A6698E23EC0AB8003D2459 /* AppDelegate.swift in Sources */,
 				00A669A023EC108E003D2459 /* MainTabController.swift in Sources */,
+				0088B09123ED56B40088383A /* CustomKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
