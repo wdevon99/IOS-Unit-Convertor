@@ -10,16 +10,24 @@ import Foundation
 import UIKit
 
 class SpeedViewController : UIViewController, UITextFieldDelegate {
-
-    @IBOutlet weak var tf1: UITextField!
-    @IBOutlet weak var customKeyboard: CustomKeyboard!
+    var historyStringArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tf1.delegate = self
+        self.loadDefaultsData("SpeedHistory")
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        customKeyboard.activeTextField = textField
+    func loadDefaultsData(_ historyKey :String) {
+        let defaults = UserDefaults.standard
+        historyStringArray = defaults.object(forKey: historyKey) as? [String] ?? [String]()
     }
+    
+    @IBAction func onSave(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        let historyString = "Km/h"
+        
+        historyStringArray.append(historyString)
+        defaults.set(historyStringArray, forKey: "SpeedHistory")
+    }
+    
 }
