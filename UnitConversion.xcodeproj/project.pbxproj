@@ -17,6 +17,7 @@
 		00A6699823EC0AB8003D2459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6699623EC0AB8003D2459 /* LaunchScreen.storyboard */; };
 		00A669A023EC108E003D2459 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6699F23EC108E003D2459 /* MainTabController.swift */; };
 		00D408AF23FE5E1600BF1DE1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D408AE23FE5E1600BF1DE1 /* Temperature.swift */; };
+		00D408B123FE7C4F00BF1DE1 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D408B023FE7C4F00BF1DE1 /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00A6699923EC0AB8003D2459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A6699F23EC108E003D2459 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		00D408AE23FE5E1600BF1DE1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		00D408B023FE7C4F00BF1DE1 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				008C04C323F52C1100BF7650 /* Keyboard.swift */,
 				00A6699F23EC108E003D2459 /* MainTabController.swift */,
 				008C04C723F54E0600BF7650 /* TempController.swift */,
+				00D408B023FE7C4F00BF1DE1 /* HistoryController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				00A6699023EC0AB8003D2459 /* WelcomeViewController.swift in Sources */,
 				00A6698E23EC0AB8003D2459 /* AppDelegate.swift in Sources */,
 				00D408AF23FE5E1600BF1DE1 /* Temperature.swift in Sources */,
+				00D408B123FE7C4F00BF1DE1 /* HistoryController.swift in Sources */,
 				008C04C823F54E0600BF7650 /* TempController.swift in Sources */,
 				008C04C423F52C1100BF7650 /* Keyboard.swift in Sources */,
 				00A669A023EC108E003D2459 /* MainTabController.swift in Sources */,

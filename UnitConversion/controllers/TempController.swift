@@ -25,6 +25,12 @@ class TempController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.assignDelegates()
+        self.loadDefaultsData("TemparatureHistory")
+    }
+    
+    func loadDefaultsData(_ historyKey :String) {
+        let defaults = UserDefaults.standard
+        temperature.historyStringArray = defaults.object(forKey: historyKey) as? [String] ?? [String]()
     }
     
     func assignDelegates() {
@@ -68,6 +74,14 @@ class TempController: UIViewController, UITextFieldDelegate {
             farenheitTf.text = "\(temperature.farenheit)"
         }
         
+    }
+    
+    @IBAction func onSave(_ sender: UIBarButtonItem) {
+        let defaults = UserDefaults.standard
+        let historyString = "\(temperature.celsius) celsius | \(temperature.farenheit) farenheit | \(temperature.kelvin) kelvin"
+        
+        temperature.historyStringArray.append(historyString)
+        defaults.set(temperature.historyStringArray, forKey: "TemparatureHistory")
     }
     
 }
