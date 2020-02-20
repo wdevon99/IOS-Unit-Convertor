@@ -18,6 +18,7 @@
 		00B9141123EDC3DC00503997 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9141023EDC3DC00503997 /* SpeedViewController.swift */; };
 		00B9143123EDE6D400503997 /* TemparatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B9143023EDE6D400503997 /* TemparatureViewController.swift */; };
 		00C6ED4823EEDE1D0051CC2B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C6ED4723EEDE1D0051CC2B /* HistoryViewController.swift */; };
+		00D408A523FE3B6800BF1DE1 /* TemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D408A423FE3B6800BF1DE1 /* TemperatureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		00B9141023EDC3DC00503997 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		00B9143023EDE6D400503997 /* TemparatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemparatureViewController.swift; sourceTree = "<group>"; };
 		00C6ED4723EEDE1D0051CC2B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		00D408A423FE3B6800BF1DE1 /* TemperatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,19 +77,44 @@
 		00A6698C23EC0AB8003D2459 /* UnitConversion */ = {
 			isa = PBXGroup;
 			children = (
+				00D408A723FE3F3100BF1DE1 /* views */,
+				00D408A623FE3EF600BF1DE1 /* controllers */,
+				00D408A323FE3B4A00BF1DE1 /* models */,
 				0088B08F23ED56840088383A /* ReusableComponents */,
 				00A6698D23EC0AB8003D2459 /* AppDelegate.swift */,
-				00A6698F23EC0AB8003D2459 /* WelcomeViewController.swift */,
-				00A6699123EC0AB8003D2459 /* Main.storyboard */,
-				00A6699F23EC108E003D2459 /* MainTabController.swift */,
 				00A6699423EC0AB8003D2459 /* Assets.xcassets */,
-				00A6699623EC0AB8003D2459 /* LaunchScreen.storyboard */,
 				00A6699923EC0AB8003D2459 /* Info.plist */,
-				00B9141023EDC3DC00503997 /* SpeedViewController.swift */,
-				00B9143023EDE6D400503997 /* TemparatureViewController.swift */,
-				00C6ED4723EEDE1D0051CC2B /* HistoryViewController.swift */,
 			);
 			path = UnitConversion;
+			sourceTree = "<group>";
+		};
+		00D408A323FE3B4A00BF1DE1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				00D408A423FE3B6800BF1DE1 /* TemperatureModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		00D408A623FE3EF600BF1DE1 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00B9141023EDC3DC00503997 /* SpeedViewController.swift */,
+				00A6699F23EC108E003D2459 /* MainTabController.swift */,
+				00A6698F23EC0AB8003D2459 /* WelcomeViewController.swift */,
+				00C6ED4723EEDE1D0051CC2B /* HistoryViewController.swift */,
+				00B9143023EDE6D400503997 /* TemparatureViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		00D408A723FE3F3100BF1DE1 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				00A6699623EC0AB8003D2459 /* LaunchScreen.storyboard */,
+				00A6699123EC0AB8003D2459 /* Main.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D408A523FE3B6800BF1DE1 /* TemperatureModel.swift in Sources */,
 				00A6699023EC0AB8003D2459 /* WelcomeViewController.swift in Sources */,
 				00B9141123EDC3DC00503997 /* SpeedViewController.swift in Sources */,
 				00A6698E23EC0AB8003D2459 /* AppDelegate.swift in Sources */,
