@@ -132,6 +132,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTfValueChanged:" destination="ZFM-AI-wq2" eventType="editingChanged" id="zbZ-cj-YJ1"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -152,7 +155,7 @@
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYy-wL-jdD">
+                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYy-wL-jdD">
                                                                 <rect key="frame" x="100" y="0.0" width="200" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="30" id="1qV-Tb-QIQ"/>
@@ -161,6 +164,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTfValueChanged:" destination="ZFM-AI-wq2" eventType="editingChanged" id="kDv-RB-2Z5"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -181,7 +187,7 @@
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-Nu-HOI">
+                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-Nu-HOI">
                                                                 <rect key="frame" x="100" y="0.0" width="200" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="200" id="eAi-ON-zfX"/>
@@ -190,6 +196,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="onTfValueChanged:" destination="ZFM-AI-wq2" eventType="editingChanged" id="5v6-Sc-X7q"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -241,6 +250,7 @@
                         <outlet property="celsiusTf" destination="ZoP-d1-sB6" id="HrJ-pa-Yqg"/>
                         <outlet property="farenheitTf" destination="vYy-wL-jdD" id="zuX-5e-wdV"/>
                         <outlet property="kelvinTf" destination="qH8-Nu-HOI" id="hgs-zr-drB"/>
+                        <outlet property="keyboard" destination="sSq-LM-5zq" id="t1f-ND-Esq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4l-hc-uPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
